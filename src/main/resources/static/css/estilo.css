@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@800&family=Poppins:wght@400;500;600;700&family=Roboto&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#banner {
+    background-color: black;
+    padding: 30px 300px 30px 300px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+}
+
+#banner img {
+    width: 30px;
+    float: left;
+    margin-right: 300px;
+
+    padding: 12px;
+    margin: 0px;
+}
+
+#banner h1 {
+    color: greenyellow;
+}
+
+#container {
+    display: grid;
+    place-items: center;
+}
+
+.ls-produto {
+    width: 700px;
+    margin-top: 106px;
+}
+
+#lsQuantidade {
+    width: 700px;
+    margin-top: 106px;
+    display: none;
+}
+
+.produto {
+    border: solid black 3px;
+    width: 200px;
+    height: 210px;
+    float: left;
+    margin: 10px;
+    cursor: pointer;
+    /* border-color: greenyellow; */
+}
+
+.produto-selecionado {
+    border-color: greenyellow;
+}
+
+.produto img {
+    width: 0%;
+    height: 70%;
+}
+
+.produto .nome {
+    background-color: black;
+    color: greenyellow;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.produto .valor {
+    display: flex;
+    align-items: center;
+    height: 15%;
+    padding-left: 10px;
+}
+
+#bt-fixo,
+#bt-fixo span {
+    background-color: greenyellow;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: solid black 3px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+#bt-fixo span {
+    width: 20px;
+    height: 20px;
+    bottom: 95px;
+    background-color: black;
+    color: greenyellow;
+}
+
+@media (max-width: 700px) {
+    #banner {
+        padding: 30px 30px 30px 30px;
+    }
+
+    #bt-fixo {
+        right: 30px;
+    }
+}
+
+table {
+    width: 100%;
+}
+
+tr {
+    height: 30px;
+    background-color: gray;
+    text-align: center;
+
+}
+
+tr span {
+    background-color: black;
+    color: white;
+    height: 100%;
+    padding: 6%;
+    margin-right: 2px;
+    margin-left: 2px;
+    cursor: pointer;
+    float: left;
+    width: 20px;
+}
+
+label {
+    font-size: larger;
+}
+
+#nome {
+    background-color: gray;
+    width: 70%;
+    height: 30px;
+    border: none;
+}
+
+#bt-enviar {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+}
